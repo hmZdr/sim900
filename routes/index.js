@@ -31,7 +31,12 @@ router.get('/save', function(req, res, next) {
   kitty.save().then(() => {
     console.log('save')
   });
-  res.send('hello');
+  res.send({
+    hello: 'hello',
+    name: devicesName,
+    hum: hum,
+    temp: temp
+  });
 });
 
 module.exports = router;
