@@ -5,6 +5,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://hello:hello@ds113179.mlab.com:13179/sim900');
+
 var index = require('./routes/index');
 var users = require('./routes/users');
 
