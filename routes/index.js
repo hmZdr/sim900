@@ -18,7 +18,7 @@ const Devices = mongoose.model('Device',
   }
 );
 
-router.get('/save', function(req, res, next) {
+router.get('/s', function(req, res, next) {
   var devicesName = req.query.n || 'Demo';
   var hum = req.query.h || "hum";
   var temp = req.query.t || "temp";
